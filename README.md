@@ -9,18 +9,20 @@ Hashtags: #qa-automation #api-testing #performance-testing #k6 #jest #supertest 
 ![K6](https://img.shields.io/badge/-K6-7D64FF?style=flat&logo=k6&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
 
+
 ## 📌 Project Overview
 This repository hosts a comprehensive automated testing framework designed for the [JSONPlaceholder](https://jsonplaceholder.typicode.com/) fake REST API. The project demonstrates a hybrid testing strategy combining **Functional API Testing** (POST, GET, DELETE) with **Non-Functional Performance Testing** to ensure system reliability under load.
 
 ## 🛠 Tech Stack
 * **API Automation:** Node.js, Jest, Supertest
-  <img width="712" height="209" alt="image" src="[https://github.com/user-attachments/assets/69a6f246-182b-40cc-910c-984c69a325e6](https://github.com/user-attachments/assets/69a6f246-182b-40cc-910c-984c69a325e6)" />
+  <img width="712" height="209" alt="image" src="https://github.com/user-attachments/assets/69a6f246-182b-40cc-910c-984c69a325e6" />
 
 * **Performance Testing:** K6 (Load Testing)
-  <img width="1150" height="625" alt="image" src="[https://github.com/user-attachments/assets/aea4fa08-ccf9-4fc4-a807-c16aaed3b982](https://github.com/user-attachments/assets/aea4fa08-ccf9-4fc4-a807-c16aaed3b982)" />
+<img width="1150" height="625" alt="image" src="https://github.com/user-attachments/assets/aea4fa08-ccf9-4fc4-a807-c16aaed3b982" />
 
 * **Reporting:** Excel (xlsx) Test Case Logs
-  <img width="838" height="197" alt="image" src="[https://github.com/user-attachments/assets/4a924ded-2f6c-4aec-ba98-d429e2c1ad1b](https://github.com/user-attachments/assets/4a924ded-2f6c-4aec-ba98-d429e2c1ad1b)" />
+<img width="838" height="197" alt="image" src="https://github.com/user-attachments/assets/4a924ded-2f6c-4aec-ba98-d429e2c1ad1b" />
+
 
 ## ⚙️ Features
 * **End-to-End API Validation:** Verifies endpoints for Users and Posts resources.
@@ -30,68 +32,59 @@ This repository hosts a comprehensive automated testing framework designed for t
 
 ## 📂 Project Structure
 
-```text
-├── api-tests/          # Jest & Supertest functional test scripts
-├── performance/        # K6 load testing scripts
-├── reports/            # Excel sheets with test execution results
-└── README.md           # Project documentation
 
-🔄 CI/CD Pipeline
+├── api-tests/          \# Jest & Supertest functional test scripts
+├── performance/        \# K6 load testing scripts
+├── reports/            \# Excel sheets with test execution results
+└── README.md           \# Project documentation
 
-This project is integrated with GitHub Actions to ensure code quality with every push.
+## 🔄 CI/CD Pipeline
+This project is integrated with **GitHub Actions** to ensure code quality with every push.
+* **Trigger:** Runs automatically on every push to the `main` branch.
+* **Jobs:** 1. Installs Node.js dependencies.
+    2. Executes Jest API tests (Sequential execution).
+    3. Sets up K6 and runs Performance benchmarks.
+* **Status:** You can view the live build status in the "Actions" tab.
 
-    Trigger: Runs automatically on every push to the main branch.
+## 🚀 How to Run
 
-    Jobs:
+### Prerequisites
+* Node.js (v14+)
+* K6 installed on your machine
 
-        Installs Node.js dependencies.
-
-        Executes Jest API tests (Sequential execution).
-
-        Sets up K6 and runs Performance benchmarks.
-
-    Status: You can view the live build status in the "Actions" tab.
-
-🚀 How to Run
-
-Prerequisites
-
-    Node.js (v14+)
-
-    K6 installed on your machine
-
-1. Install Dependencies
-
-Bash
-
+### 1. Install Dependencies
+```bash
 npm install
+```
 
-2. Run Functional API Tests
+### 2\. Run Functional API Tests
 
-Bash
-
+```bash
 npm test
+```
 
-3. Run Performance Tests
+### 3\. Run Performance Tests
 
-Bash
-
+```bash
 k6 run performance/test1.js
+```
 
-📊 Test Results
+## 📊 Test Results
 
-Test cases cover positive and negative scenarios. Detailed execution logs are available in the reports/ directory (or "See attached Excel sheet").
+Test cases cover positive and negative scenarios. Detailed execution logs are available in the `reports/` directory (or "See attached Excel sheet").
 
-👥 Authors
+-----
 
-    Zaid Hassan - @zaidhassan2
+## 👥 Authors
 
-    Hafiz Muhammad Rizwan - @Hafiz-Muhammad-Rizwan
+* **Zaid Hassan** - [@zaidhassan2](https://github.com/zaidhassan2)
+* **Hafiz Muhammad Rizwan** - [@Hafiz-Muhammad-Rizwan](https://github.com/Hafiz-Muhammad-Rizwan)
 
-🎥 Project Demo
+## 🎥 Project Demo
+* [Testing.webm](https://github.com/user-attachments/assets/c3ffbf77-412e-48a5-b4c4-d2dcf8ec8b65)
 
-    View Project Demo Video
 
-📊 Detailed Reports
+## 📊 Detailed Reports
+Full test execution logs are available in the Excel format.
+👉 **[Download the Test Case Report (.xlsx)](reports/TestCases.xlsx)**
 
-Full test execution logs are available in the Excel format. 👉 Download the Test Case Report (.xlsx)
