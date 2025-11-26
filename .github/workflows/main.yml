@@ -1,0 +1,27 @@
+name: Assignment 4 Automation
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run API Tests (Jest)
+        run: npm test
+
+      - name: Setup K6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Run Member 1 Load Test
+        run: k6 run performance/test1.js
+
+      - name: Run Member 2 Load Test
+        run: k6 run performance/test2.js
