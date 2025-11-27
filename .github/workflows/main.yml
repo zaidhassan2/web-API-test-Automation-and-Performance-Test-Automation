@@ -25,3 +25,6 @@ jobs:
 
       - name: Run Member 2 Load Test
         run: k6 run performance/test2.js
+
+      - name: Run Member 3 Load Test
+        run: k6 run performance/test3.js
