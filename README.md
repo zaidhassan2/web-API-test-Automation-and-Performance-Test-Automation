@@ -79,7 +79,7 @@ Test cases cover positive and negative scenarios. Detailed execution logs are av
 
 * **Zaid Hassan** - [@zaidhassan2](https://github.com/zaidhassan2)
 * **Hafiz Muhammad Rizwan** - [@Hafiz-Muhammad-Rizwan](https://github.com/Hafiz-Muhammad-Rizwan)
-
+* **Malik Abubakr** - [@abubakar-natizen](https://github.com/Abubakar-netizen)
 ## 🎥 Project Demo
 * [Testing.webm](https://github.com/user-attachments/assets/c3ffbf77-412e-48a5-b4c4-d2dcf8ec8b65)
 
